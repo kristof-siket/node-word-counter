@@ -19,7 +19,13 @@
   },
   "homepage": "https://gitlab.com/kristofsiket/node-word-counter#readme",
   "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.11.2",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "figlet": "^1.7.0"
   }
 }
