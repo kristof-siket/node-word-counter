@@ -1,0 +1,25 @@
+{
+  "name": "word-counter",
+  "version": "0.0.1",
+  "description": "A simple but powerful tool to find the \"N\" most frequently occurring word inside the text files of a directory.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/kristofsiket/node-word-counter.git"
+  },
+  "author": "Kristof Siket (kristofsiket@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/kristofsiket/node-word-counter/issues"
+  },
+  "homepage": "https://gitlab.com/kristofsiket/node-word-counter#readme",
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
