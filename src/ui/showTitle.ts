@@ -1,5 +1,5 @@
 import figlet from "figlet";
-import { APP_TITLE } from "../util/contants";
+import { APP_TITLE } from "../utils/contants";
 
 const showTitle = () => {
   console.log(figlet.textSync(APP_TITLE));

@@ -1,4 +1,4 @@
-import { COMMON_ENGLISH_WORDS } from "../util/contants";
+import { COMMON_ENGLISH_WORDS } from "../utils/contants";
 
 /**
  * Returns a map of the top n most frequently used words in the given text. Note: this assumes that the entire text is loaded.
