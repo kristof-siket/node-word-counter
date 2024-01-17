@@ -21,12 +21,13 @@ describe.each(FOLDERS)("getWordFrequencyInFile", (folder) => {
     )} when given ${folder}/%s.txt`,
     async (file) => {
       const lines = await getWordFrequencyInFile(
-        path.join(__dirname, `./data/${folder}/${file}.txt`)
+        path.join(__dirname, `./data/${folder}/${file}.txt`),
+        5
       );
 
-      // Log out folder and file nicely
       console.log(`Folder: ${folder}, File: ${file}`);
       console.log(expectedResults[folder - 1]);
+
       expect(lines).toEqual(expectedResults[folder - 1][file]);
     }
   );

@@ -5,7 +5,7 @@ import { COMMON_ENGLISH_WORDS } from "../utils/contants";
  * @param text The text to analyze.
  * @param n The number of words to return.
  */
-const getWordFrequencyMap = async (text: string, n: number = 5) => {
+const getWordFrequencyMap = async (text: string, n?: number) => {
   const words =
     text
       .toLocaleLowerCase()

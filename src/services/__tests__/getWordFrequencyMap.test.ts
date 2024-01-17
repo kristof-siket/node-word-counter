@@ -10,20 +10,22 @@ describe("getWordFrequencyMap", () => {
   });
 
   it("should return an empty object when given a string with only common words", async () => {
-    const result = await getWordFrequencyMap("the a and");
+    const result = await getWordFrequencyMap("the a and", 5);
     expect(result).toEqual({});
   });
 
   it("should return an empty object when given a string with only short words", async () => {
     const result = await getWordFrequencyMap(
-      "a b c d e f g h i j k l m n o p q r s t u v w x y z"
+      "a b c d e f g h i j k l m n o p q r s t u v w x y z",
+      5
     );
     expect(result).toEqual({});
   });
 
   it("should return a map of word frequencies when given a string with words of various lengths", async () => {
     const result = await getWordFrequencyMap(
-      "the quick brown fox jumps over the lazy dog"
+      "the quick brown fox jumps over the lazy dog",
+      5
     );
     expect(result).toEqual({
       brown: 1,

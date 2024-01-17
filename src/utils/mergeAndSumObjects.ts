@@ -6,6 +6,7 @@ const mergeAndSumObjects = (
   for (const [key, value] of Object.entries(b)) {
     result[key] = (result[key] || 0) + value;
   }
+
   return result;
 };
 
