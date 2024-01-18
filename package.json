@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "A simple but powerful tool to find the \"N\" most frequently occurring word inside the text files of a directory.",
   "main": "index.js",
+  "bin": {
+    "word-counter": "dist/index.js"
+  },
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
