@@ -5,6 +5,7 @@ import showTitle from "./ui/showTitle";
 import packageJson from "../package.json";
 import getWordFrequencyInFolder from "./services/getWordFrequencyInFolder";
 import validateArguments from "./utils/validateArguments";
+import formatOutput from "./ui/formatOutput";
 
 // App title
 showTitle();
@@ -36,7 +37,7 @@ try {
       console.log(
         `🎉 Done! Here are the top ${numOfWords} most frequently used words in ${dir}:`
       );
-      console.log(result);
+      console.log(formatOutput(result, Number(numOfWords), dir));
     })
     .catch((err) => {
       // Log a supportive error message with some emoji

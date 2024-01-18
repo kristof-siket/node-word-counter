@@ -25,7 +25,14 @@ node dist/index.js ./src/services/__tests__/data/1 5
 Which should generate the following result:
 
 ```
-{ man: 6, truth: 6, acknowledged: 3, considered: 3, daughters: 3 }
+🎉 Done! Here are the top 5 most frequently used words in ./src/services/__tests__/data/1:
+Top 5 words in ./src/services/__tests__/data/1:
+
+1. man: 6
+2. truth: 6
+3. acknowledged: 3
+4. considered: 3
+5. daughters: 3
 ```
 
 As you can see, paths relative to the calling location are working just fine. Happy testing! 🎉
