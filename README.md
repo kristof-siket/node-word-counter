@@ -57,3 +57,5 @@ The implementation goes through the following steps:
 
 The algorithm is optimized because it performs reads in parallel, and also doesn't overload the memory because of the line-by-line parsing. One weak point is that a large file can also be a single long line, which would make it slightly less effective. Chunk-by-chunk reading can be an option to solve this, in that case, we have to make sure that the words are not broken on the boundary of each chunk.
 
+Note: the current implementation doesn't go into subfolders recursively. It could be added to the `getWordFrequencyInFolder` quite easily though. 
+

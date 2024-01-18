@@ -3,6 +3,12 @@ import getWordFrequencyInFile from "./getWordFrequencyInFile";
 import path from "path";
 import mergeAndSumObjects from "../utils/mergeAndSumObjects";
 
+/**
+ * Return the number of times each word appears in a folder (only the top n words)
+ * @param folderPath Path to the folder
+ * @param n Number of words to return
+ * @returns A promise that resolves to an object with the top n words and their counts
+ */
 const getWordFrequencyInFolder = async (folderPath: string, n?: number) => {
   const files = await fs.promises.readdir(folderPath);
 
